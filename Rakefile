@@ -1,6 +1,6 @@
 namespace 'silent' do
     task :update do
-        `git pull`
-        `git push`
+        `git pull --quiet`
+        `git push --quiet`
     end
 end
