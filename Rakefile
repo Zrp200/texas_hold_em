@@ -5,5 +5,5 @@ namespace 'silent' do
     end
 end
 task :spec => ['silent:update'] do
-    `rspec spec/lib/texas_hold_em.rb`
+    puts `rspec spec/lib/texas_hold_em.rb`
 end
