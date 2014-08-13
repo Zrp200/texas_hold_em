@@ -4,6 +4,6 @@ namespace 'silent' do
         `git push --quiet`
     end
 end
-task :spec => [silent:update] do
+task :spec => ['silent:update'] do
     `rspec spec/lib/texas_hold_em.rb`
 end
