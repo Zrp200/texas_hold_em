@@ -29,7 +29,21 @@
 				
 	end
 	class Player
-		attr_accessor :bet, :money	
+		attr_accessor :bet, :money
+		def initialize(pot)
+			@bet, @money, @pot = 0
+		end
+		def new_round
+			@bet = 0
+		end
+		# The player matches the others' bets
+			def stay(amt, pot)
+				@money -= amt
+				pot += amt
+			end
+		# The player raises the bet amount
+			alias :raise :stay
+		
 	end
 # The deck. It stores Card objects.
 	class Deck
