@@ -30,7 +30,7 @@
 	end
 	class Player
 		attr_accessor :bet, :money
-		def initialize(pot)
+		def initialize
 			@bet, @money = 0, 1000
 		end
 		def new_round
