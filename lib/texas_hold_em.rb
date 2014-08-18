@@ -37,7 +37,7 @@
 			@bet = 0
 		end
 		# The player matches the others' bets
-			def stay(amt, pot=pot)
+			def stay(amt=@bet, pot=pot)
 				@money -= amt
 				pot += amt
 			end
