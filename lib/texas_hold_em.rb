@@ -31,13 +31,13 @@
 	class Player
 		attr_accessor :bet, :money
 		def initialize(pot)
-			@bet, @money, @pot = 0
+			@bet, @money = 0, 1000
 		end
 		def new_round
 			@bet = 0
 		end
 		# The player matches the others' bets
-			def stay(amt, pot)
+			def stay(amt, pot=pot)
 				@money -= amt
 				pot += amt
 			end
