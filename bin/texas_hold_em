@@ -8,3 +8,10 @@ BEGIN {
 	end
 	puts case ARGV[0]
 		when "-h" then <<HELP
+Usage: texas_hold_em [--help|--version]
+	-v/--version: The version being used.
+	-h/--help: This message
+HELP
+		when "-v" then "0.0.0.pre"
+	end
+}
