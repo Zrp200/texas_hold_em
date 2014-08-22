@@ -1,0 +1,10 @@
+#!usr/bin/env ruby
+BEGIN {
+	ARGV[0] = case ARGV[0]
+		when "--help" then "-h"
+		when "--version" then "-v"
+	else
+		ARGV[0]
+	end
+	puts case ARGV[0]
+		when "-h" then <<HELP
