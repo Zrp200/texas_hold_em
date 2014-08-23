@@ -4,3 +4,4 @@ Gem::Specification.new do |texas_hold_em|
     texas_hold_em.version = "0.0.0.pre"
     texas_hold_em.summary = "A kind of poker"
     texas_hold_em.author = "Zachary Perlmutter"
+end
